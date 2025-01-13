@@ -1,0 +1,38 @@
+portfolio/
+├── index.php
+├── src/
+│   ├── scss/
+│   │   ├── abstracts/
+│   │   │   ├── _breakpoints.scss
+│   │   │   ├── _colors.scss
+│   │   │   ├── _mixins.scss
+│   │   │   ├── _typography.scss
+│   │   │   └── _index.scss
+│   │   ├── base/
+│   │   │   ├── _reset.scss
+│   │   │   ├── _base.scss
+│   │   │   ├── _flex.scss      
+│   │   │   ├── _grid.scss      
+│   │   │   ├── _container.scss 
+│   │   │   └── _index.scss
+│   │   ├── components/
+│   │   │   ├── _buttons.scss
+│   │   │   ├── _cards.scss
+│   │   │   ├── _hamburger.scss
+│   │   │   ├── _navigation.scss
+│   │   │   └── _index.scss
+│   │   ├── layout/
+│   │   │   ├── _header.scss
+│   │   │   ├── _hero.scss
+│   │   │   ├── _about.scss
+│   │   │   ├── _projects.scss
+│   │   │   ├── _contact.scss
+│   │   │   ├── _footer.scss
+│   │   │   └── _index.scss
+│   │   └── main.scss
+│   ├── js/
+│   │   └── main.js (empty)
+│   ├── css/
+│   │   └── main.css (will be compiled from SCSS)
+│   └── img/
+       └── mylogo.jpg 

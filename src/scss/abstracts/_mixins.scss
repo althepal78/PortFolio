@@ -1,0 +1,11 @@
+// _mixins.scss
+@mixin button-style($style) {
+  background-color: map-get($style, background);
+  color: map-get($style, color);
+  padding: map-get($style, padding, 1rem); // Default padding if not defined
+  width: map-get($style, width, auto); // Default width if not defined
+  height: map-get($style, height, auto); // Default height if not defined
+  border: map-get($style, border, none); // Ensure no border is applied if not defined
+  cursor: map-get($style, cursor, pointer); // Default cursor to pointer if not defined
+  border-radius: map-get($style, border-radius, 5px); // Default border-radius to 5px if not defined
+}
