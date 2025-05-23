@@ -1,0 +1,43 @@
+﻿my-portfolio/
+│
+├── public/                   # Static assets that don't need processing
+│   ├── logo.jpg              # Favicon/logo image
+│   └── robots.txt            # SEO file for web crawlers
+│
+├── src/                      # All source code
+│   ├── assets/               # Images and other assets that get processed
+│   │   ├── images/           # Project images
+│   │   │   └── hero.png      # Hero section background
+│   │   └── icons/            # Custom SVG icons
+│   │
+│   ├── components/           # Reusable UI components
+│   │   ├── Button.jsx        # Button component
+│   │   ├── Footer.jsx        # Site footer
+│   │   ├── Header.jsx        # Navigation header
+│   │   ├── ProjectCard.jsx   # Card for project display
+│   │   ├── SocialLinks.jsx   # Social media icons group
+│   │   ├── ContactForm.jsx   # Form for contact page
+│   │   ├── Layout.jsx        # Wraps all pages with Header/Footer
+│   │   └── index.js          # Barrel exports for all components
+│   │
+│   ├── hooks/                # Custom React hooks
+│   │   └── useScrollTop.js   # Scroll to top when navigating pages
+│   │
+│   ├── pages/                # Page components
+│   │   ├── Home.jsx          # Home page
+│   │   ├── About.jsx         # About page
+│   │   ├── Projects.jsx      # Projects page
+│   │   ├── Contact.jsx       # Contact page
+│   │   └── NotFound.jsx      # 404 page
+│   │
+│   ├── utils/                # Utility functions
+│   │   └── validations.js    # Form validation helpers
+│   │
+│   ├── App.jsx               # Main component with routing
+│   ├── main.jsx              # Entry point
+│   └── index.css             # Global styles
+│
+├── .gitignore                # Git ignore file
+├── index.html                # Entry HTML file
+├── package.json              # Dependencies and scripts
+└── vite.config.js            # Vite configuration

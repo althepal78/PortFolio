@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://althepal78.com/sitemap.xml
