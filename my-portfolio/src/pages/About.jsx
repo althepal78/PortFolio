@@ -8,28 +8,28 @@ const About = () => {
 
   return (
     <Layout>
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-[var(--knicks-black)] text-[var(--knicks-white)]">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
+          <h1 className="text-4xl font-bold mb-8 text-center text-[var(--knicks-silver)]">About Me</h1>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <h2 className="text-2xl font-bold mb-4 text-[var(--knicks-blue)]">Albert Cardona</h2>
-              <h3 className="text-xl mb-4">Web Developer & Knicks Fan</h3>
+              <h3 className="text-xl mb-4 text-[var(--knicks-orange)]">Web Developer & Knicks Fan</h3>
               
-              <p className="mb-4">
+              <p className="mb-4 text-[var(--knicks-silver)]">
                 I'm a passionate web developer based in Florida, specializing in creating responsive and user-friendly web applications. With experience in both front-end and back-end technologies, I enjoy bringing projects to life from concept to deployment.
               </p>
               
-              <p className="mb-6">
+              <p className="mb-6 text-[var(--knicks-silver)]">
                 When I'm not coding, you'll find me watching Knicks games, exploring new technologies, or expanding my programming knowledge.
               </p>
               
               <div className="mb-8">
-                <h3 className="text-xl font-semibold mb-3">My Skills</h3>
+                <h3 className="text-xl font-semibold mb-3 text-[var(--knicks-blue)]">My Skills</h3>
                 <div className="flex flex-wrap gap-2">
                   {['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'HTML/CSS', 'Tailwind CSS', 'Git'].map((skill) => (
-                    <span key={skill} className="px-3 py-1 bg-gray-100 rounded-full text-sm">
+                    <span key={skill} className="px-3 py-1 bg-[var(--knicks-black)] text-[var(--knicks-silver)] rounded-full text-sm border border-[var(--knicks-blue)]">
                       {skill}
                     </span>
                   ))}
@@ -37,8 +37,8 @@ const About = () => {
               </div>
               
               <div>
-                <h3 className="text-xl font-semibold mb-3">My Journey</h3>
-                <p>
+                <h3 className="text-xl font-semibold mb-3 text-[var(--knicks-blue)]">My Journey</h3>
+                <p className="text-[var(--knicks-silver)]">
                   My web development journey started with a curiosity about how websites work. That curiosity turned into a passion and eventually a career. I'm constantly learning and improving my skills to build better, more efficient web applications.
                 </p>
               </div>

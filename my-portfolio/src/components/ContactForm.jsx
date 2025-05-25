@@ -69,11 +69,10 @@ const ContactForm = () => {
       message: ''
     });
   };
-
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+    <form onSubmit={handleSubmit} className="w-full p-6 rounded-lg bg-[var(--knicks-black)]/80 border-2 border-[var(--knicks-blue)] shadow-lg">
       <div className="mb-4">
-        <label htmlFor="name" className="block mb-2 font-medium">
+        <label htmlFor="name" className="block mb-2 font-medium text-[var(--knicks-orange)]">
           Name
         </label>
         <input
@@ -82,17 +81,18 @@ const ContactForm = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[var(--knicks-blue)] ${
-            formErrors.name ? 'border-red-500' : 'border-gray-300'
+          className={`w-full px-4 py-3 rounded bg-[var(--knicks-black)] text-[var(--knicks-white)] border-2 focus:outline-none focus:ring-2 focus:ring-[var(--knicks-orange)] ${
+            formErrors.name ? 'border-red-500' : 'border-[var(--knicks-blue)]'
           }`}
+          placeholder="Your name"
         />
         {formErrors.name && (
           <p className="mt-1 text-sm text-red-500">{formErrors.name}</p>
         )}
       </div>
-      
+
       <div className="mb-4">
-        <label htmlFor="email" className="block mb-2 font-medium">
+        <label htmlFor="email" className="block mb-2 font-medium text-[var(--knicks-orange)]">
           Email
         </label>
         <input
@@ -101,17 +101,18 @@ const ContactForm = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[var(--knicks-blue)] ${
-            formErrors.email ? 'border-red-500' : 'border-gray-300'
+          className={`w-full px-4 py-3 rounded bg-[var(--knicks-black)] text-[var(--knicks-white)] border-2 focus:outline-none focus:ring-2 focus:ring-[var(--knicks-orange)] ${
+            formErrors.email ? 'border-red-500' : 'border-[var(--knicks-blue)]'
           }`}
+          placeholder="your.email@example.com"
         />
         {formErrors.email && (
           <p className="mt-1 text-sm text-red-500">{formErrors.email}</p>
         )}
       </div>
-      
+
       <div className="mb-6">
-        <label htmlFor="message" className="block mb-2 font-medium">
+        <label htmlFor="message" className="block mb-2 font-medium text-[var(--knicks-orange)]">
           Message
         </label>
         <textarea
@@ -120,19 +121,19 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           rows="5"
-          className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[var(--knicks-blue)] ${
-            formErrors.message ? 'border-red-500' : 'border-gray-300'
+          className={`w-full px-4 py-3 rounded bg-[var(--knicks-black)] text-[var(--knicks-white)] border-2 focus:outline-none focus:ring-2 focus:ring-[var(--knicks-orange)] ${
+            formErrors.message ? 'border-red-500' : 'border-[var(--knicks-blue)]'
           }`}
+          placeholder="Your message here..."
         ></textarea>
         {formErrors.message && (
           <p className="mt-1 text-sm text-red-500">{formErrors.message}</p>
         )}
       </div>
       
-      <Button type="submit" variant="primary">
+      <Button type="submit" variant="primary" className="w-full sm:w-auto">
         Send Message
-      </Button>
-    </form>
+      </Button>    </form>
   );
 };
 

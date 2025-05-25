@@ -1,36 +1,28 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
+import { ecommerce, weather, knicksComm, portfolio } from '../assets/images/index.js';
 import '../styles/Home.css';
-import aboutImage from '../assets/images/about.jpg';
-import portBgImage from '../assets/images/portbg.jpg';
 
 const Home = () => {
   return (
     <Layout>
-      {/* Hero Section with cover image background */}
-      <section className="min-h-screen relative flex items-center">
-        {/* Background image with overlay */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={portBgImage} 
-            alt="Background" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-70"></div> {/* Dark overlay for readability */}
-        </div>
-
-        <div className="container mx-auto px-4 z-10 relative">
-          <div className="flex flex-col md:flex-row items-center">
-            {/* Text Content - Left Column */}
-            <div className="w-full md:w-1/2 mb-12 md:mb-0 md:pr-8">
+      {/* Hero Section with CSS background */}
+      <section className="hero-section relative flex items-center justify-center">
+        {/* Dark overlay for better text readability */}
+        <div className="hero-overlay"></div>
+        
+        {/* Content */}
+        <div className="container mx-auto px-6 z-10 relative">
+          <div className="flex flex-col items-center text-center">
+            <div className="max-w-2xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
                 Hi, I'm <span className="text-[var(--knicks-orange)]">Albert Cardona</span>
               </h1>
-              <p className="text-lg md:text-xl mb-8 text-white leading-relaxed max-w-lg">
+              <p className="text-lg md:text-xl mb-8 text-white leading-relaxed">
                 A passionate web developer specializing in creating dynamic, responsive web applications. Let's build something amazing together.
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <Link 
                   to="/projects" 
                   className="px-6 py-3 bg-[var(--knicks-blue)] text-white rounded-md font-medium hover:bg-[var(--knicks-orange)] transition-colors"
@@ -45,9 +37,6 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            
-            {/* Image - Right Column - Leave empty but take up space to center text */}
-            <div className="w-full md:w-1/2"></div>
           </div>
         </div>
       </section>
@@ -58,10 +47,9 @@ const Home = () => {
           <h2 className="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1 */}
-            <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            {/* Project 1 */}            <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
               <img 
-                src={aboutImage} 
+                src={ecommerce} 
                 alt="Project 1" 
                 className="w-full h-48 object-cover"
               />
@@ -85,10 +73,9 @@ const Home = () => {
               </div>
             </div>
             
-            {/* Project 2 */}
-            <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            {/* Project 2 */}            <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
               <img 
-                src={aboutImage} 
+                src={weather} 
                 alt="Project 2" 
                 className="w-full h-48 object-cover"
               />
@@ -112,10 +99,9 @@ const Home = () => {
               </div>
             </div>
             
-            {/* Project 3 */}
-            <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+            {/* Project 3 */}            <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
               <img 
-                src={aboutImage} 
+                src={knicksComm} 
                 alt="Project 3" 
                 className="w-full h-48 object-cover"
               />
@@ -156,7 +142,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">My Skills</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Skill Category 1 */}
             <div className="bg-gray-900 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4 text-[var(--knicks-orange)]">Frontend</h3>

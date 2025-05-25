@@ -18,7 +18,7 @@ const PageLoading = () => (
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen">
+      <div className="">
         <Suspense fallback={<PageLoading />}>
           <Routes>
             <Route path="/" element={<Home />} />
